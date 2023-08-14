@@ -1,11 +1,11 @@
-# Rick and Morty Faves 🌐 
+# Rick and Morty Faves ⭐ 
 
 Welcome to the Rick and Morty Faves App ! 👋
 
-[DESCRIPTION] 🚀
+This application brings the quirky and hilarious world of Rick and Morty to your fingertips. With this app, you can explore an extensive list of characters from the show and curate your own list of favorites. 🚀
 
 ## Check It Out
-👉 [Rick and Morty Faves App 🌐](https://santisb.github.io/rick-and-morty-faves/) 
+👉 [Rick and Morty Faves App ⭐](https://santisb.github.io/rick-and-morty-faves/) 
 
 ## 👨‍💻 How to Contribute
 I'm thrilled to have you contribute to the Rick and Morty Faves App !
