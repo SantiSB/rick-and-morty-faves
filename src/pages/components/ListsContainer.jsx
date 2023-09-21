@@ -1,43 +1,18 @@
-import { useState, useReducer, useMemo, useCallback } from 'react'
-import useCharacters from '../hooks/useCharacters'
 import { Box, TextField, InputAdornment, Grid } from '@mui/material/'
 import { AccountCircle } from '@mui/icons-material'
-import { favoriteReducer, initialState } from '../reducers/favorites'
 import FavoritesList from './FavoritesList'
 import CharactersList from './CharactersList'
+import useCharacterManagement from '../hooks/useCharacterManagement'
 
-const API = 'https://rickandmortyapi.com/api/character'
-
-/**
- * A component that displays a list of characters and allows users to add and remove favorites.
- * @return {JSX.Element}
- */
 function ListCharacters() {
-  const [search, setSearch] = useState('')
-  const [favorites, dispatch] = useReducer(favoriteReducer, initialState)
-  const characters = useCharacters(API)
-
-  const addFavorite = (favorite) => {
-    if (!favorites.favorites.includes(favorite)) {
-      dispatch({ type: 'ADD_TO_FAVORITE', payload: favorite })
-    }
-  }
-
-  const removeFavorite = (favorite) => {
-    dispatch({ type: 'REMOVE_TO_FAVORITE', payload: favorite })
-  }
-
-  const handleSearch = useCallback((e) => {
-    setSearch(e.target.value)
-  }, [])
-
-  const filteredUsers = useMemo(
-    () =>
-      characters.filter((user) => {
-        return user.name.toLowerCase().includes(search.toLowerCase())
-      }),
-    [characters, search]
-  )
+  const {
+    search,
+    favorites,
+    addFavorite,
+    removeFavorite,
+    handleSearch,
+    filteredUsers,
+  } = useCharacterManagement()
 
   return (
     <Box sx={{ padding: 3 }}>
