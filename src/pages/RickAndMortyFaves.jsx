@@ -1,5 +1,5 @@
 import AppBarSearch from './components/AppBarSearch'
-import ListCharacters from './components/ListCharacters'
+import ListsContainer from './components/ListsContainer'
 
 /**
  * Main component of the Rick and Morty Faves App.
@@ -9,7 +9,7 @@ function RickAndMortyFaves() {
   return (
     <>
       <AppBarSearch />
-      <ListCharacters />
+      <ListsContainer />
     </>
   )
 }
