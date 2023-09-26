@@ -75,6 +75,7 @@ Once your pull request is approved and any requested changes are addressed, your
  | [MUI](https://mui.com/)
  | [Prettier](https://prettier.io/)
  | [ESLint](https://eslint.org/)
+ |
 
 ## Authors
 [🐱‍💻@SantiSB](https://github.com/SantiSB)
